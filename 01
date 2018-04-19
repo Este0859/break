@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Loop "While" com break</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i = 0;
+while (i < 10) { // enquanto i<10, o ciclo "while" vai definir a variável "i" como a soma entre o número que se encontra em cache e 1
+	if (i === 3) {break; } // o break irá interromper o ciclo "while" quando o i=3, fazendo com que o loop while só seja executado até i=2
+    text += "<br>O número é " + i;
+    i++;
+}
+document.getElementById("demo").innerHTML = text; // escrever na página Web "O número é..."
+</script>
+
+</body>
+</html>
